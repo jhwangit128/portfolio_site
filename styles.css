@@ -1,0 +1,821 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body{
+  background: #222222;
+  margin: 0;
+	font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 2em;
+	line-height: 1em;
+	color: #333;
+  background-color: #fff;
+
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:1em;
+	line-height:1.8em;
+}
+
+p.large{
+	font-size:3em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+  border: 0;
+  width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.main_title{
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	text-align: center;
+	font-size: 3em;
+	margin-top: 1em;
+	margin-bottom:1em;
+}
+
+.main_title_white{
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	margin-bottom: 2em;
+}
+
+
+/*navbar*/
+nav {
+	z-index:10;
+  background: black;
+}
+.navbar_container{
+	width: 100%;
+	display: inline-block;
+	background-color: black;
+	height: 4em;
+}
+
+.navbar_container a:hover,
+.navbar_container a:focus,
+.navbar_container a:active{
+	text-decoration: none;
+	color: #FF1654;
+}
+
+.navbar_container a:visited{
+	text-decoration: none;
+	decoration: none;
+}
+
+.navbar_name_container {
+	margin-top: 1em;
+	margin-left: 1em;
+	width: 30%;
+	float: left;
+}
+.navbar_name_container a{
+	color:white;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 2em;
+}
+
+.navbar_right_menu_container{
+	display: inline-block;
+	float:right;
+	margin-top: 0.5em;
+}
+
+.navbar_right_menu_container li {
+	list-style: none;
+	float:left;
+	margin: 1em;
+}
+
+.navbar_right_menu_container a {
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+
+/*header*/
+
+.button_down {
+	color:#FF1654;
+	font-size: 5em;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	margin-top: 1em;
+}
+
+.button_down:hover {
+	color:#2B2D42;
+	text-decoration: none;
+}
+
+a:visited {
+	decoration: none;
+	text-decoration: none;
+}
+
+.button_down:focus {
+	color:#2B2D42;
+	text-decoration: none;
+}
+
+
+header{
+  background: #222222;
+	background-repeat:none;
+	background-attachment:scroll;
+	background-position:center center;
+	background-size:cover;
+	-o-background-size:cover;
+	text-align:center;
+	color:#fff;
+	/*padding-bottom:50px;*/
+}
+
+.header_name{
+	font-family: 'Galada', cursive;
+	font-style:italic;
+	font-size:22px;
+	line-height:22px;
+	margin-bottom:25px;
+
+}
+
+.header_title{
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:700;
+	font-size:50px;
+	line-height:50px;
+	margin-bottom:25px;
+}
+
+
+
+section{
+	padding:100px 0;
+	margin: auto;
+}
+
+
+.section_title_contact{
+	color:white;
+	font-size:40px;
+	margin-top:0;
+	margin-bottom:15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.subtitle{
+	font-size:16px;
+	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:none;
+	font-style:italic;
+	font-weight:400;
+	margin-bottom:75px;
+	text-align: center;
+}
+
+.subtitle_contact{
+	color:white;
+	font-size:16px;
+	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:none;
+	font-style:italic;
+	font-weight:400;
+	margin-bottom:75px;
+	text-align: center;
+}
+
+
+
+.section_project {
+	background-color: #F7F7F7;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.project_container {
+	width: 25%;
+	float: left;
+	margin-bottom: 4em;
+	margin-right: 4em;
+}
+
+.modal_open_button{
+	display:block;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	position:relative;
+	text-decoration: none;
+	width:100%;
+	margin:0 auto;
+	background-color: transparent;
+		width: 100%;
+	height: 100%;
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 1em;
+
+}
+
+button:focus {
+	outline:0;}
+
+.project_hover{
+	display: block;
+	background-color:#FF1654;
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity:0;
+	transition:all ease .5s;
+}
+
+.project_hover:hover{
+	opacity:1;
+}
+
+.project_hover_content{
+	position:absolute;
+	width:100%;
+	font-size:20px;
+	text-align:center;
+	top:50%;
+	margin-top:-12px;
+	color:#fff;
+}
+
+.project_hover_content h4{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.project_title{
+	width: 100%;
+	margin:0 auto;
+	background-color:#fff;
+	text-align:center;
+	padding:25px;
+}
+
+.project_title h4{
+	text-transform:none;
+	margin:0;
+}
+
+.project_title p{
+	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style:italic;
+	font-size:16px;
+	margin:0;
+}
+
+/* Modal Content Box */
+.modal_content {
+	overflow: scroll;
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	padding: 1em 5em 5em 5em;
+}
+
+.modal_project_title {
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	margin-top: 5em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.modal_content_text {
+	text-align: center;
+	width: 55%;
+	/*margin-left: 18em;*/
+	padding: 2em 2em 1em 2em;
+	font-size: 1em;
+	text-align: left;
+}
+
+.modal_content img {
+	width: 60%;
+	height: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+/* The Close Button */
+.close_button {
+	margin: 0;
+	padding-right: .5em;
+	margin-top: 1em;
+  color: black;
+  float: right;
+	font-size: 5em;
+	clear:both;
+}
+
+.close_button:hover,
+.close_button:focus {
+  color: #FF1654;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*about*/
+/*.section_about{
+	background-color: white;
+	margin: auto;
+	width: 44%;
+	height: auto%;
+	clear: both;
+}*/
+
+/*.section_about_text{
+	margin-top: 3em;
+}*/
+
+
+/*contact*/
+.section_contact{
+	background-color:#222;
+	margin: auto;
+	padding: 10em;
+	width: 100%;
+	height: 100%;
+	clear: both;
+	background-position:center;
+	background-repeat:no-repeat;
+	text-align: center;
+}
+
+form input{
+	width: 100%;
+	border-radius: .3em;
+	margin-bottom: 1em;
+	border: none;
+}
+
+.uname, .uemail{
+	width: 50%;
+	height: 3em;
+	clear: both;
+	padding-left: 1em;
+}
+
+.message{
+	top: 1em;
+	width: 50%;
+	height: 10em;
+	clear: both;
+	padding-left: 1em;
+}
+
+.usubmit{
+	width: 50%;
+	height: 3em;
+	clear:both;
+}
+
+.usubmit:hover{
+	background-color: #FF1654;
+}
+
+
+
+/*footer*/
+
+
+.copyright{
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+}
+
+.sns_container {
+	text-align: center;
+}
+
+.sns_container ul {
+	margin: 1em 0;
+	display: inline-block;
+}
+
+.sns_container li{
+	font-size:1.5em;
+	margin: 1em;
+	float: left;
+	display: inline-block;
+}
+
+.sns_container li a {
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	transition:all .3s;
+	list-style: none;
+}
+
+.sns_container li a:hover {
+	color: red;
+}
+
+
+/*overwrite for tablet*/
+
+@media (min-width:768px){
+
+	.navbar_name_container a{
+		font-size: 1.5em;
+
+	}
+
+	.the_car {
+    position: absolute;
+    left: 0px;
+    top: -8em;
+    z-index: -1;
+	}
+
+	.header_name {
+		margin-top: 1em;
+	}
+
+	.header_title {
+		position: relative;
+	}
+
+	.button_down {
+		position: relative;
+	}
+
+	header {
+		position: relative;
+		padding-top: 350px;
+		padding-bottom:600px;
+	}
+
+	.section_about{
+		background-color: white;
+		margin: auto;
+		width: 65%;
+		height: 30em;
+		clear: both;
+	}
+
+	.section_about_text{
+		margin-top: 2em;
+		width: 100%;
+	}
+
+	.modal_content_text {
+		width: 60%;
+		margin-left: 18em;
+		padding: 2em 2em 1em 2em;
+		font-size: 1em;
+		text-align: left;
+	}
+
+	.project_containers{
+		margin-left: 9em;
+		width: 100%;
+		margin-right: auto;
+		padding: 1em;
+	}
+
+	.digestible_video_wrap{
+		margin-left: 9em;
+		margin-bottom: 3em;
+	}
+
+	.seeding_video_wrap{
+		padding-left: 0;
+		margin-left: 4em;
+		margin-bottom: 3em;
+		margin-top: 3em;
+	}
+
+	.header_name{
+		font-family: 'Galada', cursive;
+		font-style:italic;
+		font-size:4.5em;
+		line-height:40px;
+		margin-bottom:25px;
+	}
+
+	.header{
+		font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform:uppercase;
+		font-weight:700;
+		font-size:75px;
+		line-height:75px;
+		margin-bottom:50px;
+	}
+
+	footer{
+		padding:2px 0;
+		text-align:center;
+		padding: 0;
+	}
+
+	.copyright {
+		margin-top: 0;
+	}
+
+	.sns_container ul{
+		margin-top: 0;
+	}
+}
+
+@media (max-width:768px) {
+
+	.project_container {
+		width: 40%;
+		float: left;
+		margin-bottom: 2em;
+		margin-right: 2em;
+	}
+	.project_containers{
+		margin-left: 6em;
+	}
+	.project_hover_content{
+		margin-top: -18px;
+	}
+	.project_hover_content h4{
+		margin-top: 0;
+		font-size: .8em;
+	}
+	.main_title{
+		margin-bottom: 1em;
+	}
+
+	.video {
+		width: 50%;
+		margin-top: 2em;
+		margin-bottom: 25em;
+	}
+
+	.the_car {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -10;
+	}
+
+	.header_name {
+		font-size:3.5em;
+		margin-top: 20px;
+		margin-bottom: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.header_title {
+		font-size: 3em;
+		margin-top: 1em;
+		margin-bottom: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.button_down {
+		position: relative;
+	}
+
+	header {
+		position: relative;
+		padding-top: 15em;
+		padding-bottom: 25em;
+		height: 100px;
+	}
+
+	.modal_project_title {
+		font-size: 2em;
+		margin-top: 7em;
+		margin-left: 1em;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	.modal_content img {
+		width: 80%;
+		height: auto;
+		margin-top: 3em;
+		margin-bottom: 3em;
+		margin-left: auto;
+		margin-right:auto;
+	}
+
+	.modal_content iframe {
+		width: 97%;
+		margin-bottom: 2em;
+	}
+
+	.modal_content_text {
+		width: 92%;
+		margin-left: 2em;
+		padding: 2em 2em 1em 2em;
+		font-size: 1em;
+		text-align: left;
+	}
+
+	.close_button {
+		margin: 0;
+		padding-right: .3em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	  color: black;
+	  float: right;
+		font-size: 5em;
+		clear:both;
+	}
+
+	.section_about{
+		margin: auto;
+		width: 65%;
+		height: auto;
+		clear: both;
+	}
+
+	.section_about_text{
+		margin-top: 0;
+	}
+
+	form input{
+	width: 100%;
+	border-radius: .3em;
+	margin-bottom: 1em;
+	border: none;
+	}
+	.uname, .uemail{
+		width: 80%;
+		height: 3em;
+		clear: both;
+		padding-left: 1em;
+	}
+	.message{
+		top: 1em;
+		width: 80%;
+		height: 10em;
+		clear: both;
+		padding-left: 1em;
+	}
+	.usubmit{
+		width: 80%;
+		height: 3em;
+		clear:both;
+	}
+
+	footer{
+		padding: 0;
+	}
+	.sns_container ul{
+		margin-top: 0;
+	}
+}
+
+@media (max-width:480px) {
+
+.main_title{
+	font-size: 2em;
+	margin-top: 2em;
+}
+
+.main_title_white{
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	margin-bottom: 2em;
+}
+
+	.the_car {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -10;
+	}
+
+	.header_name {
+		font-size:2.5em;
+		margin-top: 20px;
+		margin-bottom: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.header_title {
+		font-size: 2em;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.button_down {
+		margin-top: 5px;
+		position: relative;
+	}
+
+	header {
+		position: relative;
+		padding-top: 6em;
+		padding-bottom: 200px;
+	}
+
+	.section_project {
+		padding-top: 20px;
+	}
+	.navbar_name_container a{
+		font-size: 1em;
+	}
+	.navbar_right_menu_container a{
+		font-size: .5em;
+	}
+	.navbar_right_menu_container {
+		margin-top: 0;
+	}
+
+	.project_containers{
+		margin-left: 1.5em;
+		width: 100%;
+		margin-right: auto;
+		padding: 1em;
+	}
+
+	.project_hover_content h4{
+		font-size: 0.6em;
+		margin-top: 0.4em;
+	}
+
+	.section_contact{
+		padding: 3em;
+	}
+
+	.copyright{
+		margin-left: 5.5em;
+	}
+
+	.modal_content{
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+
+
+/*.practice{
+	display: block;
+}
+
+.proj2{
+	height: 500px;
+	background-color: purple;
+}*/
