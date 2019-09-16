@@ -356,142 +356,69 @@ footer {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+  header, #project, #about, #contact {
+    height: 2050px;
+  }
+  nav {
+    height: 200px;
+  }
+  .navbar_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar_name_container {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+  }
+  .navbar_right_menu_container {
+    margin: 0 auto;
+  }
 	.project_container {
-		width: 40%;
-		float: left;
-		margin-bottom: 2em;
-		margin-right: 2em;
+		width: 100%;
 	}
+  .modal_content, .modal-text, .row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .modal_project_title {
+    margin-bottom: 0.5em;
+  }
+  .row, .col-7, .col-5 {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .col-7 img {
+    width: 250%;
+  }
+  .collab {
+    line-height: 1em;
+  }
+  .close_button {
+    margin-top: 0;
+  }
+  section {
+    margin: 0 auto;
+    padding-top: 250px;
+  }
+  #contact {
+    padding-top: 100px;
+  }
 
-	.project_hover_content{
-		margin-top: -18px;
-	}
-	.project_hover_content h4{
-		margin-top: 0;
-		font-size: .8em;
-	}
-	.main_title{
-		margin-bottom: 1em;
-	}
-	.header_title {
-		font-size: 3em;
-		margin-top: 1em;
-		margin-bottom: 0;
-		padding: 0;
-		position: relative;
-	}
-
-	.button_down {
-		position: relative;
-	}
-
-	header {
-		position: relative;
-		padding-top: 15em;
-		padding-bottom: 25em;
-		height: 100px;
-	}
-
-	.modal_project_title {
-		font-size: 2em;
-		margin-top: 7em;
-		margin-left: 1em;
-		margin-bottom: 1em;
-		text-align: center;
-	}
-
-	.modal_content img {
-		width: 80%;
-		height: auto;
-		margin-top: 3em;
-		margin-bottom: 3em;
-		margin-left: auto;
-		margin-right:auto;
-	}
-
-	.modal_content iframe {
-		width: 97%;
-		margin-bottom: 2em;
-	}
-
-	.modal_content_text {
-		width: 92%;
-		margin-left: 2em;
-		padding: 2em 2em 1em 2em;
-		font-size: 1em;
-		text-align: left;
-	}
-
-	.close_button {
-		margin: 0;
-		padding-right: .3em;
-		margin-top: 1em;
-		margin-bottom: 1em;
-	  color: black;
-	  float: right;
-		font-size: 5em;
-		clear:both;
-	}
-
-	.section_about{
-		margin: auto;
-		width: 65%;
-		height: auto;
-		clear: both;
-	}
-
-	.section_about_text{
-		margin-top: 0;
-	}
-
-	form input{
-	width: 100%;
-	border-radius: .3em;
-	margin-bottom: 1em;
-	border: none;
-	}
-	.uname, .uemail{
-		width: 80%;
-		height: 3em;
-		clear: both;
-		padding-left: 1em;
-	}
-	.message{
-		top: 1em;
-		width: 80%;
-		height: 10em;
-		clear: both;
-		padding-left: 1em;
-	}
-	.usubmit{
-		width: 80%;
-		height: 3em;
-		clear:both;
-	}
-
-	footer{
-		padding: 0;
-	}
-	.sns_container ul{
-		margin-top: 0;
-	}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  .main_title, .main_title_white {
-    font-size: 2em;
+  header, #project, #about, #contact {
+    height: 570px;
   }
-  nav {
-  	height: 150px;
+  .navbar_container {
+    display: flex;
+    flex-direction: column;
   }
-  .navbar_name_container {
-    width: 100%;
-    font-size: 3.5em;
-    line-height: 2em;
-  }
-  .navbar_right_menu_container{
-    width: 100%;
-  }
-
+  .project_container {
+		width: 100%;
+	}
 }
