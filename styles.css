@@ -399,6 +399,17 @@ section {
   margin: 0 auto;
   text-align: justify;
 }
+.resume {
+  color: var(--gray);
+  float: right;
+  margin-right: 50px;
+  border: 1.5px solid var(--gray);
+  padding: 0.2em 0.5em;
+}
+.resume:hover {
+  color: var(--red);
+  border: 1.5px solid var(--red);
+}
 
 /* +++++++++++++++++++++ */
 /*        CONTACT        */
