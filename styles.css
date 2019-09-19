@@ -253,18 +253,20 @@ header{
 	-o-background-size:cover;
 	text-align:center;
 	color: white;
-  padding-top: 240px;
-  width: 28%;
+  padding-top: 260px;
+  width: 30%;
   margin: 0 auto;
   text-align: left;
 }
 header h1 {
+  text-align: left;
  font-family: var(--accent-font);
  font-size: 0.5em;
 }
 .button_down {
 	color: var(--red);
 	font-size: 6em;
+  text-align: left;
 	transition-duration: 0.5s;
 	margin-top: 1em;
   margin: 0 auto;
@@ -273,7 +275,8 @@ header h1 {
 	color: var(--gray);
 }
 .header_title{
-  margin: 0 auto;
+  width: 100%;
+  text-align: left;
 	text-transform:uppercase;
 	font-size:2em;
 	margin-bottom:50px;
