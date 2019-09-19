@@ -350,6 +350,7 @@ section {
 	padding: 1em 5em 5em 5em;
 }
 .modal_project_title {
+  text-transform: lowercase;
 	color: black;
 	font-size: 2em;
 	margin-top: 1.5em;
@@ -369,6 +370,12 @@ section {
   width: 50%;
   font-size: 0.8em;
   line-height: 1.6em;
+}
+.bold {
+  font-family: var(--accent-font);
+  font-weight: bolder;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 .modal-text a {
   color: var(--red);
