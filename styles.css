@@ -497,19 +497,22 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  header, #about {
-    height: 1500px;
+  header {
+    width: 42%;
+    height: 1720px;
+    padding-top: 450px;
+  }
+  #about {
+    padding-top: 350px;
+    height: 1740px;
   }
   #project {
     height: 100%;
   }
   #contact {
-    padding-top: 70px;
-    height: 1200px;
+    padding-top: 50px;
+    height: 1500px;
   }
-	header {
-    padding-top: 350px;
-	}
   .navbar_name_container {
     width: 45%;
   	margin: 0.3em 0 0 1em;
@@ -532,8 +535,9 @@ footer {
     margin-top: 3.5em;
   }
   .modal-text {
-    font-size: 1em;
+    font-size: 2em;
     line-height: 1.6em;
+    margin-top: 20px;
   }
   .modal-img-text {
     width: 100%;
